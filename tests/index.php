@@ -8,18 +8,26 @@
 </head>
 <body>
     <?php
+        echo "Hello, world";
         // require_once "../libs/math.php";
         // require_once "../libs/webshipper.php";
         // require_once "../libs/jwt.php";
         // require_once "../libs/webui.php";
         // require_once "../libs/requests.php";
-        require_once "../libs/numpy.php";
+        // require_once "../libs/numpy.php";
+        require_once "../libs/json.php";
+
 
         $a = [0, 1, 2, 3, 4];
         $b = [5, 6, 7, 8, 9];
 
-        $np = Numpy::dot($a, $b);
-        print_r($np);
+        
+        $strng = JSON::stringify($a);
+        print_r($strng);
+        // $np = Numpy::dot($a, $b);
+        // print_r($np);
+
+        
         
         // $payload = array(
         //     "userId" => 1,
